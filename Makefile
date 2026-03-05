@@ -33,9 +33,11 @@ $(FIGS_PY): $(BUILDDIR)/%.py.pdf: %.py | dirs
 	python3 $< > $@
 
 
+
 $(FIGS_DIO): $(BUILDDIR)/%.drawio.pdf: %.drawio | dirs
 	@printf "$(BLUE)Converting drawio diagram '$<' to '$@'$(RESET)\n"
 	$(DRAWIO) --crop --export --format pdf --output $@ $< --disable-gpu --headless --no-sandbox
+
 
 $(FIGS_PDF): $(BUILDDIR)/%.pdf: %.pdf | dirs
 	cp $< $@
