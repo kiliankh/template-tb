@@ -459,8 +459,8 @@
   \addcontentsline{toc}{chapter}{\abstractname}
 }
 
-% Annexes
-\renewcommand\appendixpagename{Annexes}
+% Annexes, si besoin decommenter
+%\renewcommand\appendixpagename{Annexes}
 
 \renewcommand\listoflistingscaption{Liste des codes sources}
 \renewcommand{\nomname}{Liste des symboles}
