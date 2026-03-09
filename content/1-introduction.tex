@@ -3,58 +3,45 @@
 
 % En bref, on vous demande d'introduire votre travail, l'idée de départ et les objectifs attendus. Le lecteur qui découvrirait votre projet au travers de cette introduction devrait ainsi être capable d'en comprendre le cadre, l'idée générale et les aboutissants du projet.
 %------------------------------------------------------------------
-
 \section{Contexte}
-
 % Cette section, bien que \emph{non obligatoire}, figure fréquemment en préambule de l'introduction afin de préciser le cadre formel dans lequel le projet s'inscrit. Elle permet de situer le sujet dans un contexte plus large que ne le suggère l'intitulé du projet. Souvent, ce dernier est réalisé dans un environnement industriel, en réponse à une problématique globale. La présentation du contexte contribue ainsi à clarifier les enjeux, les objectifs et les contraintes associés au projet.
 %------------------------------------------------------------------
-La qualité de l'air constitue aujourd'hui un enjeu majeur de la protection environnementale et de santé publique. De nombreuses études ont prouvé qu'une exposition aux polluants atmosphériques amène à des effets qui deviennet vite néfasestes pour la santé humaine, surtout au niveau respiratoire ainsi que cardiovasculaire.
-
-Dans l'air extérieur, les principaux polluants présent sont les particules fines (PM$_1$, PM$_{2.5}$, PM$_{10}$), les différents gaz comme le monoxyde de carbone (CO), les oxydes d'azote (NO$_x$) et les composés organiques volatils (COV).
-Bien qu'il existe des stations de mesure officielles tel que Nabel en Suisse par exemple, elles sont généralement peu nombreuses et réparties sur des zones géographiques très larges. Ceci limite la capacité à obtenir des mesures locales précises, surtout dans les zones urbaines et proche des sources de pollution spécifique. Il faut aussi ajouter que les mesures se situent généralement au niveau du sol, ne permettant pas d'obtenir des profils verticaux de la distributions des polluants dans l'atmosphère.
-
-Dans ce contexte, le projet \textbf{ESYAir} vise à développer une nouvelle solutions de monitoring de la qualité de l'air permettant de mesurer un certain nombre de paramètres environnementaux en étant à la fois fiable et flexible. Ce système se compose de deux parties: une station fixe servant de référence au sol, et une partie mobile permettant de réaliser des mesurers en altitude. Ce choix permet d'avoir une vision plus exhaustive de la distributions spaciale et verticales des polluants dans l'atmosphère.
-
-Le travail de bachelor s'inscrit dans cette démarche et vise à étudier, dimensionner ainsi que tester un système de mesure multi-capteurs à son usage.
-La première partie du projet se concentre sur l'analyse et la sélection d'une station de mesure déja existantes capable de surveiller les différents polluants tel que les particules fines, les gaz polluants et potentiellement quelques variables metéorologiques.
-La seconde partie s'inscrit dans la possibilité d'exploration des mesures en altitude un moyen d'un vecteur mobile 3D (drone, ballon météorologique, etc.) équipé de capteurs.
-
-L'objectif final est de mettre en place un système capable de fournir des mesures de la qualité de l'air de manière plus souple et plus significatif de la réalité environnementale, en restant en accord avec les contraintes techniques et économiques du projet.
-
-
 \subsection{Pollution atmosphérique}
+
+La qualité de l'air constitue aujourd'hui un enjeu majeur de la protection environnementale et de santé publique. Un grand nombre études ont montré qu'une exposition aux polluants atmosphériques entraîne des effets néfastes sur la santé humaine, en particulier au niveau respiratoire et cardiovasculaire.
+
+Dans l'air extérieur, les principaux polluants présents sont les particules fines (PM$_1$, PM$_{2.5}$, PM$_{10}$), ainsi que différents gaz tels que l'ozone troposphérique (O$_3$), le monoxyde de carbone (CO), les oxydes d'azote (NO$_x$) et les composés organiques volatils (COV).
+
 \subsection{Importance du monitoring environnemental}
+Afin de tracer l'évolution de ces polluants et d'évaluer leurs impacts, des réseaux de stations de mesure de la qualité de l'air ont été mis en place dans de nombreux pays. En Suisse, le réseau NABEL représente l'un des systèmes de référence pour la surveillance de la pollution atmosphérique.
+
+Cependant, ces stations sont généralement peu nombreuses et réparties sur de larges zones géographiques, ce qui limite la possibilité d'obtenir des mesures locales précises, notamment dans les zones urbaines ou à proximité de sources spécifiques de pollution. De plus, les mesures sont le plus souvent réalisées au niveau du sol, ce qui ne permet pas d'obtenir des profils verticaux de la distribution des polluants dans l'atmosphère.
 
 \section{Problématique}
-
 % La problématique constitue le cœur de l'introduction et représente le point de départ de votre réflexion. Elle doit être clairement définie afin de présenter de manière explicite le problème que vous souhaitez résoudre. Une problématique bien formulée permet au lecteur de comprendre les enjeux du projet, le contexte dans lequel il s'inscrit et les raisons pour lesquelles cette question mérite d'être traitée.
 
 % Il ne s'agit pas seulement d'exposer un sujet, mais d'identifier une difficulté spécifique, un manque ou un besoin auquel votre projet apporte une réponse. Vous devez également souligner la pertinence de votre démarche : pourquoi ce problème est-il important ? Quelle valeur ajoutée votre travail est-il susceptible d'apporter ? En clarifiant ces points, vous démontrerez la légitimité et l'intérêt de votre projet.
 %------------------------------------------------------------------
-\subsection{Pourquoi mesurer la qualité de l'air}
-\subsection{Limites des stations existantes}
+Ces limitations mettent en évidence la nécessité de développer des systèmes de mesure complémentaires, capables de fournir des données plus flexibles et plus représentatives de la distribution spatiale et verticale des polluants atmosphériques.
+
+Dans ce contexte, le projet \textbf{ESYAir} vise à développer une solution de monitoring de la qualité de l'air permettant de mesurer plusieurs paramètres environnementaux de manière fiable et flexible. Le système se compose de deux parties : une station fixe servant de référence au sol, et une solution mobile permettant de réaliser des mesures en altitude. Cette approche permet d'obtenir une vision plus complète de la distribution spatiale et verticale des polluants dans l'atmosphère.
 
 \section{Objectifs}
-
-% Cette section a pour but d'énoncer précisément les objectifs que vous vous fixez pour répondre à la problématique identifiée. Il ne s'agit pas simplement de décrire des intentions générales, mais de formuler des objectifs \emph{clairs, précis et mesurables}.
-
-% Chaque objectif doit être en cohérence avec le contexte et les enjeux du projet. Il est également essentiel que ces objectifs soient atteignables dans le cadre du projet et qu'ils puissent être validés à son terme. Une bonne pratique consiste à utiliser des critères SMART (Spécifique, Mesurable, Atteignable, Réaliste, Temporellement défini) pour s'assurer que vos objectifs sont bien définis.
-
-% Par exemple, au lieu de formuler un objectif vague comme « améliorer le système », préférez une formulation claire : « Réduire le temps de réponse du système de 20\% d'ici la fin du projet ».
-%------------------------------------------------------------------
-
-% Idéal: liste d'objectifs SMART + lien direct avec les deux délivrables.
 \subsection{Objectif général}
-% Ex: Développer et intégrer un système ESYAir composé d'une station de référence au sol
-% et d'une solution mobile permettant l'analyse verticale de la qualité de l'air.
+
+Le présent travail de bachelor s'inscrit dans cette démarche et vise à étudier, dimensionner et tester un système de mesure multi-capteurs dédié au suivi de la qualité de l'air extérieur.
+
+L'objectif principal est de développer le système \textbf{ESYAir}, capable de mesurer plusieurs paramètres environnementaux et d'offrir une vision plus représentative de la distribution spatiale et verticale des polluants atmosphériques.
 
 \subsection{Objectifs spécifiques}
-\begin{itemize}
-    \item Réaliser une analyse de marché des stations de mesure outdoor et définir des critères de sélection.
-    \item Sélectionner et intégrer une station de référence (gaz + particules + météo basique) sur ESYLab.
-    \item Concevoir une solution mobile (capteurs embarqués + GPS + vecteur vertical) pour profils en altitude.
-    \item Mettre en place des campagnes de mesure et analyser les données obtenues.
-\end{itemize}
+
+Afin d'atteindre cet objectif général, le projet est structuré en deux axes principaux.
+
+La première partie consiste à analyser et sélectionner une station de mesure existante capable de surveiller différents polluants atmosphériques, notamment les particules fines et certains gaz polluants, ainsi que des paramètres météorologiques de base.
+
+La seconde partie vise à étudier la faisabilité de mesures en altitude à l'aide d'un vecteur mobile tridimensionnel, tel qu'un drone ou un ballon météorologique, équipé de capteurs environnementaux.
+
+L'objectif final est de mettre en place un système capable de fournir des mesures de la qualité de l'air de manière plus flexible et plus représentative de la réalité environnementale, tout en respectant les contraintes techniques et économiques du projet.
 
 \section{Méthodologie}
 
@@ -64,8 +51,8 @@ L'objectif final est de mettre en place un système capable de fournir des mesur
 
 % En clarifiant votre démarche méthodologique, vous montrez non seulement la rigueur de votre travail, mais vous facilitez aussi la compréhension et la reproductibilité de vos résultats.
 %------------------------------------------------------------------
-\subsection{Analyse de marché et critères multicritères}
-\subsection{Choix technologique et dimensionnement}
-\subsection{Intégration et développement (station fixe et mobile)}
-\subsection{Calibration, tests et campagnes de mesure}
-\subsection{Analyse et validation des résultats}
+Afin d'atteindre ces objectifs, le projet est structuré en plusieurs étapes principales. Une analyse de marché des stations de mesure de la qualité de l'air est tout d'abord réalisée afin d'identifier les solutions disponibles et de définir des critères de sélection multicritères.
+
+Sur la base de cette analyse, une station de référence est sélectionnée et intégrée dans l'infrastructure ESYLab. Parallèlement, une solution mobile embarquée est étudiée afin de permettre la réalisation de mesures en altitude.
+
+Enfin, des campagnes de mesure sont réalisées afin d'évaluer les performances du système et d'analyser les données obtenues.
